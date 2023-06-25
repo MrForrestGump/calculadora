@@ -22,5 +22,16 @@ public class ExperimentoTest {
 	    exp = new Experimento();
 		assertTrue(exp.calculadoras!= null);
 	}
+	
+	@Test
+	public void carregarDadosTest() {
+		exp = new Experimento();
+		assertTrue(exp.calculadoras!= null);
+		
+		int i = 0;
+		for(Calculadora c : exp.calculadoras) {
+			 assertTrue(c.somar()==(i+=1));
+		}
+	}
 
 }
