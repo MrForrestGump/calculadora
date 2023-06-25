@@ -10,6 +10,6 @@ public class Calculadora {
 		this.b=b;
 	}
 	public int somar () {
-		return a+b;
+		return a + b;
 	}
 }
